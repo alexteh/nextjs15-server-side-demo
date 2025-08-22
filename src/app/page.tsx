@@ -1,5 +1,6 @@
 "use client"
 
+import { redirect } from "next/navigation"
 import { useEffect, useState } from "react"
 
 export default function Home() {
@@ -43,6 +44,7 @@ export default function Home() {
       setInput("")
     }
   }
+  redirect("/client-side")
 
   return (
     <div className='p-4'>
